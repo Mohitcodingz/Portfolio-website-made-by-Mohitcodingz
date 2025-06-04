@@ -1,0 +1,335 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    justify-content: space-between;
+    padding: 0 100px 0 100px;
+    box-shadow: 0px 0px 5px royalblue;
+    background-color: rgb(255, 255, 255);
+}
+
+
+nav h1 {
+    font-size: 30px;
+    color: royalblue;
+    letter-spacing: 1px;
+}
+
+.links {
+    display: flex;
+    gap: 50px;
+    padding-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: 0.2s ease-in;
+    width: 70px;
+    height: 28px;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    color: royalblue;
+    cursor: pointer;
+    background-color: rgb(182, 232, 255);
+}
+
+/* welcome div */
+.hero {
+    width: 880px;
+    height: 530px;
+    background: linear-gradient(120deg, rgb(226, 245, 255), rgb(255, 255, 255));
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 30px 80px 30px 80px;
+
+}
+
+.hero img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid rgb(255, 255, 255);
+    margin: 0 auto;
+    box-shadow: 0 0 12px gray;
+    margin-top: 20px;
+}
+
+.hero button {
+    width: 120px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: royalblue;
+    color: white;
+    margin: 30px auto;
+}
+
+.hero button:hover {
+    background-color: rgb(21, 77, 248);
+    cursor: pointer;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hero span {
+    color: royalblue;
+}
+
+.hero p {
+    font-size: 20px;
+    color: rgb(46, 46, 46);
+    line-height: 1.8;
+}
+
+.hero p span {
+    font-weight: bold;
+    color: black;
+}
+
+/* about me section */
+
+.Aboutme {
+    max-width: 880px;
+    margin: 80px auto;
+    text-align: center;
+    padding-top: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgb(210, 221, 255);
+}
+
+.Aboutme h1 {
+    color: royalblue;
+    font-size: 30px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.Aboutme p {
+    line-height: 1.8;
+    padding-bottom: 50px;
+}
+
+/* projects */
+
+.Projects {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+.Projects h1 {
+    color: royalblue;
+    font-size: 20px;
+    padding: 20px 0px 20px 20px;
+}
+
+.Projects span {
+    color: royalblue;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.projectbox {
+    margin: 0 auto;
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 12px rgb(211, 220, 245);
+    margin-top: 50px;
+}
+
+.projectbox:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 6px 18px #c6daf8;
+    z-index: 1;
+}
+
+.projectbox img {
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+.projectbox p {
+    line-height: 20px;
+    font-size: 14px;
+    padding: 0 10px 8px 10px;
+}
+
+.projectbox button {
+    height: 35px;
+    width: 100px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    background-color: royalblue;
+    border-radius: 5px;
+    border: transparent;
+    transition: background 0.2s;
+}
+
+.projectbox button:hover {
+    background-color: rgb(26, 79, 238);
+    cursor: pointer;
+}
+
+.skills {
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.skills span {
+    color: royalblue;
+    font-size: 32px;
+    display: block;
+    padding: 0 0 50px 0;
+}
+
+.skillset {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px
+}
+
+.skillset li {
+    width: auto;
+    height: 39px;
+    border: 1px transparent black;
+    border-radius: 20px;
+    background-color: rgb(187, 241, 255);
+    color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* contact me  */
+.ContactMe {
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.ContactMe h1 {
+    color: royalblue;
+}
+
+.ContactMe input {
+    padding: 0 0 0 15px;
+    width: 420px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: 0.5px solid #c3d7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border 0.17s;
+}
+
+.ContactMe input:focus {
+    border: 0.5px solid rgb(26, 83, 255);
+}
+
+.ContactMe button {
+    width: 420px;
+    height: 50px;
+    border: 0.1px transparent blue;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 119, 255);
+}
+
+.ContactMe button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 78, 245);
+}
+
+.ContactMe textarea {
+    padding: 10px 0 0 15px;
+    width: 420px;
+    height: 117px;
+    border: 0.5px solid rgb(203, 216, 255);
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+}
+
+.ContactMe textarea:focus {
+    border: 0.5px solid rgb(26, 83, 255);
+}
+
+.contactform {
+    width: 100%;
+    margin: 30px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(226, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-spacing: 1px;
+}
+
+/* here i learnt the use of the outline:none width:100%with margin:auto to make an element stand out alone in the one line seprately and also i learnt about transition:border/background time in second then effect like ease-in or something and also i learnt about resize:none to make the fixed or decided size for a box or a div tag, z-index, box-shadow, transform:translateY(-6px) scale(6px) , linear gradient , use of the :focus just like the :hover where hover is used when arrow is over that element without click it shows the result but for the :focus it shows the result when you click on it to trigger the position sticky top:0 , flex-wrap use and etc this was very interesting or more like a a leveling up project for me as a beginner*/
